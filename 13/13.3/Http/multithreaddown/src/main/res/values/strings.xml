@@ -1,0 +1,7 @@
+<resources>
+	<string name="app_name">Http</string>
+	<string name="title">要下载资源的URL</string>
+	<string name="save_file">目标文件:</string>
+	<string name="down_url"><![CDATA[http://www.crazyit.org/forum.php?mod=attachment&aid=MTA5M3wwZTcwZDRjM3wxNTE5NzA3NTk1fDN8NTg3]]></string>
+	<string name="down">下载</string>
+</resources>

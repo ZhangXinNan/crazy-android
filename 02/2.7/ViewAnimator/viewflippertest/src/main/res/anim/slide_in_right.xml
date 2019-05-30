@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 设置从右边拖进来的动画
+    android:duration指定动画持续时间  -->
+	<translate
+		android:fromXDelta="100%p"
+		android:toXDelta="0"
+		android:duration="@android:integer/config_mediumAnimTime" />
+</set>

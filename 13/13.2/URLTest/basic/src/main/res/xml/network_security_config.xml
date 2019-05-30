@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+	<!-- 使用该元素列出所有不需要加密协议即可访问的站点 -->
+	<domain-config cleartextTrafficPermitted="true">
+		<domain includeSubdomains="true">img10.360buyimg.com</domain>
+	</domain-config>
+</network-security-config>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	package="org.crazyit.intent">
+
+	<application
+		android:allowBackup="true"
+		android:icon="@mipmap/ic_launcher"
+		android:label="@string/app_name"
+		android:roundIcon="@mipmap/ic_launcher_round"
+		android:supportsRtl="true"
+		android:theme="@style/AppTheme">
+		<activity android:name=".MainActivity">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+		<activity
+			android:icon="@drawable/ic_scheme"
+			android:name=".SchemeActivity"
+			android:label="指定scheme的Activity">
+			<intent-filter>
+				<action android:name="xx" />
+				<category android:name="android.intent.category.DEFAULT" />
+				<!-- 只要Intent的Data属性的scheme是lee，即可启动该Activity -->
+				<data android:scheme="lee" />
+			</intent-filter>
+		</activity>
+		<activity
+			android:icon="@drawable/ic_host"
+			android:name=".SchemeHostPortActivity"
+			android:label="指定scheme、host、port的Activity">
+			<intent-filter>
+				<action android:name="xx" />
+				<category android:name="android.intent.category.DEFAULT" />
+				<!-- 只要Intent的Data属性的scheme是lee，且host是www.fkjava.org，
+				port是8888，即可启动该Activity -->
+				<data android:scheme="lee"
+					android:host="www.fkjava.org"
+					android:port="8888" />
+			</intent-filter>
+		</activity>
+		<activity
+			android:icon="@drawable/ic_sp"
+			android:name=".SchemeHostPathActivity"
+			android:label="指定scheme、host、path的Activity">
+			<intent-filter>
+				<action android:name="xx" />
+				<category android:name="android.intent.category.DEFAULT" />
+				<!-- 只要Intent的Data属性的scheme是lee，且host是www.fkjava.org，
+				path是/mypath，即可启动该Activity -->
+				<data android:scheme="lee"
+					android:host="www.fkjava.org"
+					android:path="/mypath" />
+			</intent-filter>
+		</activity>
+		<activity
+			android:icon="@drawable/ic_path"
+			android:name=".SchemeHostPortPathActivity"
+			android:label="指定scheme、host、port、path的Activity">
+			<intent-filter>
+				<action android:name="xx" />
+				<category android:name="android.intent.category.DEFAULT" />
+				<!-- 需要Intent的Data属性的scheme是lee，且host是www.fkjava.org，
+				port是8888，path是/mypath，才可启动该Activity -->
+				<data android:scheme="lee"
+					android:host="www.fkjava.org"
+					android:port="8888"
+					android:path="/mypath"/>
+			</intent-filter>
+		</activity>
+		<activity
+			android:icon="@drawable/ic_type"
+			android:name=".SchemeHostPortPathTypeActivity"
+			android:label="指定scheme、host、port、path、type的Activity">
+			<intent-filter>
+				<action android:name="xx"/>
+				<category android:name="android.intent.category.DEFAULT" />
+				<!-- 需要Intent的Data属性的scheme是lee，且host是www.fkjava.org，
+				port是8888，path是/mypath，
+				type是abc/xyz，才可启动该Activity -->
+				<data android:scheme="lee"
+					android:host="www.fkjava.org"
+					android:port="8888"
+					android:path="/mypath"
+					android:mimeType="abc/xyz"/>
+			</intent-filter>
+		</activity>
+	</application>
+
+</manifest>

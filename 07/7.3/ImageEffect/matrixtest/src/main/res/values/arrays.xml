@@ -1,0 +1,8 @@
+<resources>
+	<string-array name="bnArray">
+		<item>左倾斜</item>
+		<item>右倾斜</item>
+		<item>放大</item>
+		<item>缩小</item>
+	</string-array>
+</resources>

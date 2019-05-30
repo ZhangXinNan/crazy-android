@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	package="org.crazyit.auction.client">
+	<!-- 授权访问网络 -->
+	<uses-permission android:name="android.permission.INTERNET"/>
+	<application
+		android:allowBackup="true"
+		android:usesCleartextTraffic="true"
+		android:icon="@mipmap/ic_launcher"
+		android:label="@string/app_name"
+		android:roundIcon="@mipmap/ic_launcher_round"
+		android:supportsRtl="true"
+		android:theme="@style/AppTheme">
+		<activity
+			android:name=".LoginActivity"
+			android:label="@string/app_name">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN"/>
+				<category android:name="android.intent.category.LAUNCHER"/>
+			</intent-filter>
+		</activity>
+		<activity
+			android:name=".AuctionClientActivity"
+			android:label="@string/app_name">
+		</activity>
+		<activity
+			android:name=".ViewItemActivity"
+			android:label="@string/app_name">
+		</activity>
+		<activity
+			android:name=".ManageKindActivity"
+			android:label="@string/manage_kind">
+		</activity>
+		<activity
+			android:name=".AddKindActivity"
+			android:label="@string/add_kind_title">
+		</activity>
+		<activity
+			android:name=".ManageItemActivity"
+			android:label="@string/manage_item">
+		</activity>
+		<activity
+			android:name=".AddItemActivity"
+			android:label="@string/add_item_title">
+		</activity>
+		<activity
+			android:name=".ViewBidActivity"
+			android:label="@string/view_bid">
+		</activity>
+		<activity
+			android:name=".ChooseKindActivity"
+			android:label="@string/choose_kind">
+		</activity>
+		<activity
+			android:name=".ChooseItemActivity"
+			android:label="@string/app_name">
+		</activity>
+		<activity
+			android:name=".AddBidActivity"
+			android:label="@string/item_detail_title">
+		</activity>
+	</application>
+
+</manifest>

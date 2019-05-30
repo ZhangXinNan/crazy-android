@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+
+	<Button
+		android:id="@+id/select"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:text="@string/select" />
+
+	<TextView
+		android:id="@+id/numbers"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:padding="8dp"
+		android:textSize="15sp"
+		android:background="@drawable/my_border"/>
+
+	<TextView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:padding="8dp"
+		android:text="@string/content"
+		android:textSize="15sp" />
+
+	<EditText
+		android:id="@+id/content"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:lines="2" />
+
+	<Button
+		android:id="@+id/send"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:text="@string/send" />
+</LinearLayout>

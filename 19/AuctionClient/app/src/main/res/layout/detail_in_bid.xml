@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:stretchColumns="1">
+
+	<TableRow>
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/item_name"
+			android:textSize="@dimen/label_font_size" />
+
+		<TextView
+			android:id="@+id/itemName"
+			style="@style/tv_show"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content" />
+	</TableRow>
+
+	<TableRow>
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/item_kind"
+			android:textSize="@dimen/label_font_size" />
+
+		<TextView
+			android:id="@+id/itemKind"
+			style="@style/tv_show"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content" />
+	</TableRow>
+
+	<TableRow>
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/win_price"
+			android:textSize="@dimen/label_font_size" />
+
+		<TextView
+			android:id="@+id/maxPrice"
+			style="@style/tv_show"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content" />
+	</TableRow>
+
+	<TableRow>
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/init_price"
+			android:textSize="@dimen/label_font_size" />
+
+		<TextView
+			android:id="@+id/initPrice"
+			style="@style/tv_show"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content" />
+	</TableRow>
+
+	<TableRow>
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/end_time"
+			android:textSize="@dimen/label_font_size" />
+
+		<TextView
+			android:id="@+id/endTime"
+			style="@style/tv_show"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content" />
+	</TableRow>
+
+	<TableRow>
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/remark"
+			android:textSize="@dimen/label_font_size" />
+
+		<TextView
+			android:id="@+id/itemRemark"
+			style="@style/tv_show"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content" />
+	</TableRow>
+</TableLayout>

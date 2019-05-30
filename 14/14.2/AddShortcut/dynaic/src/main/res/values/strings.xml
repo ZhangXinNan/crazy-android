@@ -1,0 +1,5 @@
+<resources>
+	<string name="app_name">Dynaic</string>
+	<string name="add_shortcut">添加快捷方式</string>
+	<string name="delete_shortcut">删除快捷方式</string>
+</resources>

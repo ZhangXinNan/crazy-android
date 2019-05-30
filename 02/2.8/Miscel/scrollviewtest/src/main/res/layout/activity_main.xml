@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 定义ScrollView，为里面的组件添加垂直滚动条 -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+	<!-- 定义HorizontalScrollView，为里面的组件添加水平滚动条 -->
+	<HorizontalScrollView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+		<LinearLayout android:orientation="vertical"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent">
+			<!-- 省略多个TextView组件 -->
+			<TextView android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:padding="20dp"
+				android:text="滚动视图滚动视图滚动视图滚动视图"
+				android:textSize="30dp" />
+			<TextView android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:padding="20dp"
+				android:text="滚动视图滚动视图滚动视图滚动视图"
+				android:textSize="30dp" />
+			<TextView android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:padding="20dp"
+				android:text="滚动视图滚动视图滚动视图滚动视图"
+				android:textSize="30dp" />
+			<TextView android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:padding="20dp"
+				android:text="滚动视图滚动视图滚动视图滚动视图"
+				android:textSize="30dp" />
+			<TextView android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:padding="20dp"
+				android:text="滚动视图滚动视图滚动视图滚动视图"
+				android:textSize="30dp" />
+			<TextView android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:padding="20dp"
+				android:text="滚动视图滚动视图滚动视图滚动视图"
+				android:textSize="30dp" />
+			<TextView android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:padding="20dp"
+				android:text="滚动视图滚动视图滚动视图滚动视图"
+				android:textSize="30dp" />
+			<TextView android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:padding="20dp"
+				android:text="滚动视图滚动视图滚动视图滚动视图"
+				android:textSize="30dp" />
+			<TextView android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:padding="20dp"
+				android:text="滚动视图滚动视图滚动视图滚动视图"
+				android:textSize="30dp" />
+			<TextView android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:padding="20dp"
+				android:text="滚动视图滚动视图滚动视图滚动视图"
+				android:textSize="30dp" />
+			<TextView android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:padding="20dp"
+				android:text="滚动视图滚动视图滚动视图滚动视图"
+				android:textSize="30dp" />
+			<TextView android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:padding="20dp"
+				android:text="滚动视图滚动视图滚动视图滚动视图"
+				android:textSize="30dp" />
+			<TextView android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:padding="20dp"
+				android:text="滚动视图滚动视图滚动视图滚动视图"
+				android:textSize="30dp" />
+		</LinearLayout>
+	</HorizontalScrollView>
+</ScrollView>

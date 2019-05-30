@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+	<!-- 设置字号为20pt，在文本框结尾处绘制图片  -->
+	<TextView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:text="我爱Java"
+		android:textSize="20pt"
+		android:drawableEnd="@mipmap/ic_launcher"/>
+	<!-- 设置中间省略，所有字母大写 -->
+	<TextView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:singleLine="true"
+		android:textSize="20sp"
+		android:text="我爱Java我爱Java我爱Java我爱Java我爱Java我aaaJava"
+		android:ellipsize="middle"
+		android:textAllCaps="true"/>
+	<!--邮件、电话增加链接 -->
+	<TextView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:singleLine="true"
+		android:text="邮件是kongyeeku@163.com，电话是13900008888"
+		android:autoLink="email|phone"/>
+	<!-- 设置文字颜色、大小，并使用阴影 -->
+	<TextView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:text="测试文字"
+		android:shadowColor="#00f"
+		android:shadowDx="10.0"
+		android:shadowDy="8.0"
+		android:shadowRadius="3.0"
+		android:textColor="#f00"
+		android:textSize="18pt"/>
+	<CheckedTextView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:text="可勾选的文本"
+		android:checkMark="@drawable/ok" />
+	<!-- 通过android:background指定背景 -->
+	<TextView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:text="带边框的文本"
+		android:textSize="24pt"
+		android:background="@drawable/bg_border"/>
+	<TextView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:text="圆角边框、渐变背景的文本"
+		android:textSize="24pt"
+		android:background="@drawable/bg_border2"/>
+</LinearLayout>

@@ -1,0 +1,53 @@
+// 为Project内置属性指定属性值
+version = 1.0
+description = 'Project的属性'
+// 定义showProps任务，显示Project和Task内置的属性
+task showProps {
+	// 为Task内置属性指定属性值
+	description = 'Task的属性'
+	doLast {
+		println version
+		// 输出Task属性
+		println description
+		// 由于Task和Project都有description属性，
+		// 因此下面要显式指定访问project的description属性
+		println project.description
+	}
+}
+ext.prop1 = '添加的项目属性一'
+ext.prop2 = '添加的项目属性二'
+// 使用ext方法，传入代码块来设置属性
+ext {
+	prop3 = '添加的项目属性三'
+	prop4 = '添加的项目属性四'
+}
+task showAddedProps {
+	ext.prop1 = '添加的任务属性一'
+	ext.prop2 = '添加的任务属性二'
+	// 使用ext方法，传入代码块来设置属性
+	ext {
+		prop3 = '添加的任务属性三'
+		prop4 = '添加的任务属性四'
+	}
+	doLast {
+		println prop1
+		println project.prop1
+		println prop2
+		println project.prop2
+		println prop3
+		println project.prop3
+		println prop4
+		println project.prop4
+	}
+}
+task showCmdProp {
+	doLast{
+		println("系统显卡类型：${graphics}")
+		println("系统显卡类型：${project.graphics}")
+	}
+}
+task showJVMProp {
+	doLast{
+		println("添加的JVM属性：${p1}")
+	}
+}

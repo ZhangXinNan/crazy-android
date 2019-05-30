@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+	<!-- 指定使用style1的样式 -->
+	<EditText
+		style="@style/style1"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:text="@string/style1" />
+	<!-- 指定使用style2的样式 -->
+	<EditText
+		style="@style/style2"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:text="@string/style2" />
+</LinearLayout>

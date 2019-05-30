@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context=".MainActivity">
+	<!-- 嵌套一个约束布局来管理两个悬浮按钮 -->
+	<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		xmlns:app="http://schemas.android.com/apk/res-auto"
+		xmlns:tools="http://schemas.android.com/tools"
+		android:id="@+id/content"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:background="#80000000"
+		android:visibility="gone">
+		<!-- 下面省略了2个使用LinearLayout管理的悬浮按钮 -->
+		<LinearLayout
+			android:id="@+id/item1"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginEnd="28dp"
+			android:layout_marginBottom="86dp"
+			android:orientation="horizontal"
+			app:layout_constraintBottom_toBottomOf="parent"
+			app:layout_constraintEnd_toEndOf="parent">
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center_vertical"
+				android:layout_weight="1"
+				android:gravity="end"
+				android:text="购物车"
+				android:textColor="@android:color/white"
+				android:textSize="15sp" />
+			<android.support.design.widget.FloatingActionButton
+				android:id="@+id/mini_fab01"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:src="@drawable/list"
+				app:backgroundTint="#ff00ff"
+				app:elevation="5dp"
+				app:fabSize="mini" />
+		</LinearLayout>
+		<LinearLayout
+			android:id="@+id/item2"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_marginBottom="12dp"
+			android:orientation="horizontal"
+			app:layout_constraintBottom_toTopOf="@+id/item1"
+			app:layout_constraintEnd_toEndOf="@+id/item1"
+			app:layout_constraintStart_toStartOf="@+id/item1">
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center_vertical"
+				android:layout_weight="1"
+				android:gravity="end"
+				android:text="继续购买"
+				android:textColor="@android:color/white"
+				android:textSize="15sp" />
+			<android.support.design.widget.FloatingActionButton
+				android:id="@+id/mini_fab02"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:src="@drawable/list"
+				app:backgroundTint="#ffff00"
+				app:elevation="5dp"
+				app:fabSize="mini" />
+		</LinearLayout>
+	</android.support.constraint.ConstraintLayout>
+	<!-- 使用约束布局将该按钮定位到界面右下角 -->
+	<android.support.design.widget.FloatingActionButton
+		android:id="@+id/fab"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginEnd="20dp"
+		android:layout_marginBottom="20dp"
+		android:clickable="true"
+		android:src="@drawable/add"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:fabSize="normal"
+		app:elevation="5dp"
+		app:backgroundTint="#31bfcf"
+		app:rippleColor="#e7d161"/>
+</android.support.constraint.ConstraintLayout>

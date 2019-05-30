@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:layout_marginLeft="16dp"
+	android:layout_marginRight="16dp"
+	android:orientation="vertical">
+	<!-- 定义一个TabLayout组件 -->
+	<android.support.design.widget.TabLayout
+		android:id="@+id/tabs"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+		<!-- 在TabLayout中定义3个Tab标签 -->
+		<android.support.design.widget.TabItem
+			android:id="@+id/tabItem"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="标签一" />
+		<android.support.design.widget.TabItem
+			android:id="@+id/tabItem2"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="标签二" />
+		<android.support.design.widget.TabItem
+			android:id="@+id/tabItem3"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="标签三" />
+	</android.support.design.widget.TabLayout>
+	<!-- 定义一个ViewPager组件 -->
+	<android.support.v4.view.ViewPager
+		android:id="@+id/container"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent" />
+</LinearLayout>

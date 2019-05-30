@@ -1,0 +1,4 @@
+<resources>
+	<string name="app_name">Sorted</string>
+	<string name="send">发送有序广播</string>
+</resources>

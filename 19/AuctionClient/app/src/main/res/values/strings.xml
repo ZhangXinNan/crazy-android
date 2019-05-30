@@ -1,0 +1,35 @@
+<resources>
+	<string name="app_name">电子拍卖系统客户端</string>
+	<string name="user_name">用户账户：</string>
+	<string name="user_pass">用户口令：</string>
+	<string name="login">登录</string>
+	<string name="add">添加</string>
+	<string name="bid">竞价</string>
+	<string name="cancel">取消</string>
+	<string name="welcome">欢迎使用电子拍卖系统</string>
+	<string name="view_succ">浏览竞得物品</string>
+	<string name="view_bid">您参与竞标的物品</string>
+	<string name="view_fail">浏览流拍物品</string>
+	<string name="manage_item">您当前的拍卖物品</string>
+	<string name="manage_kind">系统的所有物品种类</string>
+	<string name="choose_kind">请选择一个物品种类</string>
+	<string name="item_list">当前种类的物品</string>
+	<string name="item_name">物品名：</string>
+	<string name="item_kind">物品种类：</string>
+	<string name="item_desc">物品描述：</string>
+	<string name="win_price">赢取价格：</string>
+	<string name="max_price">最高竞价：</string>
+	<string name="remark">物品备注：</string>
+	<string name="init_price">起拍价格：</string>
+	<string name="avail_time">有效时间：</string>
+	<string name="end_time">结束时间：</string>
+	<string name="bid_price">竞标价格：</string>
+	<string name="bid_time">竞标时间：</string>
+	<string name="bid_user">竞标人：</string>
+	<string name="add_kind_title">添加物品种类</string>
+	<string name="add_item_title">添加拍卖物品</string>
+	<string name="kind_name">种类名称：</string>
+	<string name="kind_desc">种类描述：</string>
+	<string name="item_detail_title">物品详情</string>
+	<string name="you_bid">您的竞价：</string>
+</resources>

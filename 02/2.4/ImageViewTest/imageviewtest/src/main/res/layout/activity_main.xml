@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center">
+		<!-- 此处省略三个按钮定义 -->
+		<Button android:id="@+id/plus"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="增大透明度"/>
+		<Button android:id="@+id/minus"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="降低透明度"/>
+		<Button android:id="@+id/next"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="下一张"/>
+	</LinearLayout>
+	<!-- 定义显示图片整体的ImageView -->
+	<ImageView android:id="@+id/image1"
+		android:layout_width="wrap_content"
+		android:layout_height="280dp"
+		android:src="@drawable/shuangta"
+		android:scaleType="fitCenter"/>
+	<!-- 定义显示图片局部细节的ImageView -->
+	<ImageView android:id="@+id/image2"
+		android:layout_width="120dp"
+		android:layout_height="120dp"
+		android:background="#00f"
+		android:layout_margin="10dp"/>
+</LinearLayout>

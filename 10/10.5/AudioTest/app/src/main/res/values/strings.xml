@@ -1,0 +1,8 @@
+<resources>
+	<string name="app_name">AudioTest</string>
+	<string name="play">音频播放音乐</string>
+	<string name="up">增大音量</string>
+	<string name="down">降低音量</string>
+	<string name="normal">静音</string>
+	<string name="mute">正常</string>
+</resources>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:stretchColumns="1">
+
+	<TableRow>
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/item_name"
+			android:textSize="@dimen/label_font_size" />
+
+		<TextView
+			android:id="@+id/itemName"
+			style="@style/tv_show"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content" />
+	</TableRow>
+
+	<TableRow>
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/bid_price"
+			android:textSize="@dimen/label_font_size" />
+
+		<TextView
+			android:id="@+id/bidPrice"
+			style="@style/tv_show"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content" />
+	</TableRow>
+
+	<TableRow>
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/bid_time"
+			android:textSize="@dimen/label_font_size" />
+
+		<TextView
+			android:id="@+id/bidTime"
+			style="@style/tv_show"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content" />
+	</TableRow>
+
+	<TableRow>
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/bid_user"
+			android:textSize="@dimen/label_font_size" />
+
+		<TextView
+			android:id="@+id/bidUser"
+			style="@style/tv_show"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content" />
+	</TableRow>
+</TableLayout>

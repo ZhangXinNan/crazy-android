@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+	<Button
+		android:id="@+id/bomb"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:text="@string/bomb"
+		/>
+	<Button
+		android:id="@+id/shot"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:text="@string/shot"
+		/>
+	<Button
+		android:id="@+id/arrow"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:text="@string/arrow"
+		/>
+</LinearLayout>

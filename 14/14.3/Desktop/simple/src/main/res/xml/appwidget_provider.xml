@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 指定该桌面控件的基本配置信息：
+	minWidth：桌面控件的最小宽度。
+	minWidth：桌面控件的最小高度。
+	updatePeriodMillis：更新频率
+	initialLayout：初始时显示的布局 -->
+<appwidget-provider xmlns:android="http://schemas.android.com/apk/res/android"
+	android:initialLayout="@layout/my_widget"
+	android:minHeight="70dip"
+	android:minWidth="150dip"
+	android:updatePeriodMillis="1000" />

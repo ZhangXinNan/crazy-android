@@ -1,0 +1,5 @@
+<resources>
+	<string name="app_name">FileTest</string>
+	<string name="read">读取</string>
+	<string name="write">写入</string>
+</resources>

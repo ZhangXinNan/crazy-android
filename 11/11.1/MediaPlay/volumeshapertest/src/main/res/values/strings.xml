@@ -1,0 +1,5 @@
+<resources>
+	<string name="app_name">VolumeShaperTest</string>
+	<string name="play">播放</string>
+	<string name="apply_effect">应用效果</string>
+</resources>

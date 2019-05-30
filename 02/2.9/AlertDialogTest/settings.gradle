@@ -1,0 +1,1 @@
+include ':alertdialogtest', ':dialogtheme', ':popupwindowtest', ':datedialogtest', ':progressdialogtest'

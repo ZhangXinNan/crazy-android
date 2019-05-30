@@ -1,0 +1,1 @@
+include ':gesturetest', ':gesturezoom', ':gestureflip', ':multizoom', ':multiimagezoom', ':addgesture', ':recognizegesture'

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:padding="@dimen/title_padding"
+	android:stretchColumns="1">
+
+	<TextView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center"
+		android:padding="@dimen/title_padding"
+		android:text="@string/add_kind_title"
+		android:textSize="@dimen/label_font_size" />
+
+	<TableRow>
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/kind_name"
+			android:textSize="@dimen/label_font_size" />
+
+		<EditText
+			android:id="@+id/kindName"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:inputType="text" />
+	</TableRow>
+
+	<TableRow>
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/kind_desc"
+			android:textSize="@dimen/label_font_size" />
+
+		<EditText
+			android:id="@+id/kindDesc"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:inputType="text" />
+	</TableRow>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+
+		<Button
+			android:id="@+id/bnAdd"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:text="@string/add" />
+
+		<Button
+			android:id="@+id/bnCancel"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:text="@string/cancel" />
+	</LinearLayout>
+</TableLayout>

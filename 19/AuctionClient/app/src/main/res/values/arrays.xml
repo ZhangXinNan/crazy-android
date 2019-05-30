@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string-array name="auction_list">
+		<item>查看竞得物品</item>
+		<item>浏览流拍物品</item>
+		<item>管理物品种类</item>
+		<item>管理物品</item>
+		<item>浏览拍卖物品</item>
+		<item>查看自己的竞标</item>
+	</string-array>
+	<string-array name="availTime">
+		<item>一天</item>
+		<item>二天</item>
+		<item>三天</item>
+		<item>四天</item>
+		<item>五天</item>
+		<item>一个星期</item>
+		<item>一个月</item>
+	</string-array>	
+</resources>

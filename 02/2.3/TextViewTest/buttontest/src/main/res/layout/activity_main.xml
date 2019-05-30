@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+	<!-- 文字带阴影的按钮 -->
+	<Button
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="文字带阴影的按钮"
+		android:textSize="12pt"
+		android:shadowColor="#aa5"
+		android:shadowRadius="1"
+		android:shadowDx="5"
+		android:shadowDy="5"/>
+	<!-- 普通文字按钮 -->
+	<Button
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:background="@drawable/red"
+		android:text="普通按钮"
+		android:textSize="10pt"/>
+	<!-- 带文字的图片按钮-->
+	<Button
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:background="@drawable/button_selector"
+		android:textSize="11sp"
+		android:text="带文字的图片按钮"/>
+</LinearLayout>

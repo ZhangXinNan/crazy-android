@@ -1,0 +1,30 @@
+apply plugin: 'java'
+apply plugin: 'application'
+// 指定run任务执行的主类
+mainClassName = 'lee.HelloWorld'
+task showProjectProps {
+	doLast {
+		properties.each {
+			e -> println e
+		}
+	}
+}
+// 配置被依赖的源代码路径
+sourceSets {
+	fkframework
+}
+// 为run任务的classpath增加fkframework的类
+run.classpath = sourceSets.main.runtimeClasspath + 
+	files(sourceSets.fkframework.output.classesDir)
+// 配置compileJava任务依赖compileFkframeworkJava任务
+compileJava.dependsOn compileFkframeworkJava
+sourceSets {
+	main {
+		// 将fkframework生成的字节码文件的存储路径添加到编译时类路径中
+		compileClasspath = compileClasspath + files(fkframework.output.classesDir)
+	}
+	test {
+		// 将fkframework生成的字节码文件的存储路径添加到运行时类路径中
+		runtimeClasspath = runtimeClasspath + files(fkframework.output.classesDir)
+	}
+}

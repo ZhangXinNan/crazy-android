@@ -1,0 +1,11 @@
+#
+#Wed Nov 28 02:04:27 CST 2018
+org.crazyit.auction.controller.CommonController=org.springframework.stereotype.Component
+org.crazyit.auction.web.AuthImg=javax.servlet.annotation.WebServlet
+org.crazyit.auction.controller.AuctionController=org.springframework.stereotype.Component
+org.crazyit.auction.controller.RestfulController=org.springframework.stereotype.Component
+org.crazyit.auction.domain.AuctionUser=javax.persistence.Entity,javax.persistence.Table
+org.crazyit.auction.domain.State=javax.persistence.Entity,javax.persistence.Table
+org.crazyit.auction.domain.Kind=javax.persistence.Entity,javax.persistence.Table
+org.crazyit.auction.domain.Bid=javax.persistence.Entity,javax.persistence.Table
+org.crazyit.auction.domain.Item=javax.persistence.Entity,javax.persistence.Table

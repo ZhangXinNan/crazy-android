@@ -1,0 +1,4 @@
+<resources>
+	<string name="app_name">ProximityTest</string>
+	<string name="hello">系统正在检测是否临近疯狂软件教育中心</string>
+</resources>

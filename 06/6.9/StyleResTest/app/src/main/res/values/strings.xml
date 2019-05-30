@@ -1,0 +1,5 @@
+<resources>
+	<string name="app_name">StyleResTest</string>
+	<string name="style1">样式1的格式</string>
+	<string name="style2">样式2的格式</string>
+</resources>

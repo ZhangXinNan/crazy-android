@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+	<!-- 定义三个TextView，用于显示用户输入的数据 -->
+	<TextView
+		android:id="@+id/name"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:textSize="18sp" />
+	<TextView
+		android:id="@+id/passwd"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:textSize="18sp" />
+	<TextView
+		android:id="@+id/gender"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:textSize="18sp" />
+</LinearLayout>

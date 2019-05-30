@@ -1,0 +1,8 @@
+<resources>
+	<string name="app_name">GroupSend</string>
+	<string name="numbers">号码（多个号码以逗号隔开）</string>
+	<string name="content">短信内容</string>
+	<string name="select">请通过通讯录选择收件人</string>
+	<string name="send">群发</string>
+	<string name="permission_tip">您必须允许本应用发送短信和读取联系人信息</string>
+</resources>

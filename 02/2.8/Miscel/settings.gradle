@@ -1,0 +1,1 @@
+include ':toasttest', ':calendarviewtest', ':choosedate', ':numberpickertest', ':searchviewtest', ':scrollviewtest', ':notificationtest'

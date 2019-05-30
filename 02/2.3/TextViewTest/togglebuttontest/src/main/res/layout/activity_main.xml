@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+	<!-- 定义一个ToggleButton按钮 -->
+	<ToggleButton android:id="@+id/toggle"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:textOff="横向排列"
+		android:textOn="纵向排列"
+		android:checked="true"/>
+	<Switch android:id="@+id/switcher"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:textOff="横向排列"
+		android:textOn="纵向排列"
+		android:thumb="@drawable/check"
+		android:checked="true"/>
+	<!-- 定义一个可以动态改变方向的线性布局 -->
+	<LinearLayout android:id="@+id/test"
+		android:orientation="vertical"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+		<!-- 下面省略了三个按钮的定义 -->
+		<Button
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="测试按钮一"
+			/>
+		<Button
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="测试按钮二"
+			/>
+		<Button
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="测试按钮三"
+			/>
+	</LinearLayout>
+</LinearLayout>

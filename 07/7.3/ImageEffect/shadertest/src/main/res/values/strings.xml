@@ -1,0 +1,8 @@
+<resources>
+	<string name="app_name">ShaderTest</string>
+	<string name="bitmap">位图</string>
+	<string name="line">线性渐变</string>
+	<string name="radial">圆形渐变</string>
+	<string name="sweep">角度渐变</string>
+	<string name="composite">混合</string>
+</resources>

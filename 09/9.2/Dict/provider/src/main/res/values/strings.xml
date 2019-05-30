@@ -1,0 +1,9 @@
+<resources>
+	<string name="app_name">Provider</string>
+	<string name="insert">添加生词</string>
+	<string name="search">查找</string>
+	<string name="detail">解释</string>
+	<string name="word_tip">输入生词</string>
+	<string name="word_description">输入生词解释</string>
+	<string name="input_tip">输入单词的部分或全部</string>
+</resources>

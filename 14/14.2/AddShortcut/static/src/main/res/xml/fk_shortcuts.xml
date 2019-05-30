@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+	<shortcut
+		android:enabled="true"
+		android:icon="@drawable/fklogo"
+		android:shortcutDisabledMessage="@string/disable_message"
+		android:shortcutId="fk_shortcut"
+		android:shortcutLongLabel="@string/long_label"
+		android:shortcutShortLabel="@string/short_label">
+		<intent
+			android:action="android.intent.action.VIEW"
+			android:targetClass="org.crazyit.desktop.StaticActivity"
+			android:targetPackage="org.crazyit.desktop" />
+		<!-- categories目前只能指定android.shortcut.conversation -->
+		<categories android:name="android.shortcut.conversation" />
+	</shortcut>
+	<!-- 下面可根据需要列出多个shortcut元素 -->
+</shortcuts>

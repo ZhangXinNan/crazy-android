@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans.xsd
+	http://www.springframework.org/schema/mvc
+	http://www.springframework.org/schema/mvc/spring-mvc.xsd     
+	http://www.springframework.org/schema/context
+	http://www.springframework.org/schema/context/spring-context.xsd">
+	<!-- Spring可以自动去扫描base-package下面的包及其子包下面的Java文件， 如果扫描到有Spring的相关注解的类，
+		则把这些类注册为Spring的Bean -->
+	<context:component-scan base-package="org.crazyit.auction.controller">
+	</context:component-scan>
+	<mvc:annotation-driven />
+	<!-- 静态资源处理 -->
+	<mvc:default-servlet-handler />
+	<mvc:interceptors>
+		<!-- 使用bean定义一个Interceptor，直接定义在mvc:interceptors根下面的Interceptor将拦截所有的请求 -->
+		<mvc:interceptor>
+			<mvc:mapping path="/*" />
+			<!-- 不进行拦截 -->
+			<mvc:exclude-mapping path="/login" />
+			<mvc:exclude-mapping path="/main" />
+			<mvc:exclude-mapping path="/proLogin"/>
+			<bean class="org.crazyit.auction.controller.AuthInterceptor" />
+		</mvc:interceptor>
+		<!-- 使用bean定义一个Interceptor，直接定义在mvc:interceptors根下面的Interceptor将拦截所有的请求 -->
+<mvc:interceptor>
+	<mvc:mapping path="/api/**" />
+	<!-- 不进行拦截 -->
+	<mvc:exclude-mapping path="/api/users/login" />
+	<bean class="org.crazyit.auction.controller.RestfulAuth" />
+</mvc:interceptor>		
+		
+	</mvc:interceptors>	
+	<!-- 视图解析器 p:prefix属性表示前缀 p:suffix表示后缀 -->
+	<bean id="viewResolver"
+		class="org.springframework.web.servlet.view.InternalResourceViewResolver"
+		p:prefix="/WEB-INF/content/"
+		p:suffix=".jsp" />
+</beans>

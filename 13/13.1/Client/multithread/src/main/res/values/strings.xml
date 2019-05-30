@@ -1,0 +1,4 @@
+<resources>
+	<string name="app_name">MultiThread</string>
+	<string name="send">发送</string>
+</resources>

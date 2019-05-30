@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	package="org.crazyit.content">
+
+	<application
+		android:icon="@mipmap/ic_launcher">
+		<!-- 注册一个ContentProvider -->
+		<provider
+			android:name=".FirstProvider"
+			android:authorities="org.crazyit.providers.firstprovider"
+			android:exported="true" />
+	</application>
+
+
+</manifest>

@@ -1,0 +1,35 @@
+// 实现Plugin<Project>定义自定义插件
+class FirstPlugin implements Plugin<Project> {
+	// 重写接口中apply方法
+	void apply(Project project){
+		// 为项目额外定义一个User类型的user属性
+        project.extensions.create("user", User)
+		// 调用task方法定义showName任务
+		project.task('showName') {
+			doLast{
+				println '用户名:' + project.user.name
+			}
+		}
+		// 调用tasks对象（TaskContainer）的create方法定义showPass任务
+		project.tasks.create('showPass') {
+			doLast {
+				println '密码:' + project.user.pass
+			}
+		}
+	}
+}
+class User {
+	String name = 'fkjava'
+	String pass = 'leegang'
+}
+// 引入FirstPlugin插件
+apply plugin: FirstPlugin
+// 为Project的user属性的name属性赋值
+user.name = "疯狂软件教育"
+
+// 引入org.fkjava.ItemPlugin插件
+apply plugin: org.fkjava.ItemPlugin
+// 为org.fkjava.ItemPlugin插件所扩展的项目属性赋值
+item.name='疯狂Android讲义'
+item.price = 108
+item.discount = 0.75

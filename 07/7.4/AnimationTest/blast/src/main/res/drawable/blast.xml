@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 定义动画只播放一次，不循环 -->
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+	android:oneshot="true" >
+	<item android:drawable="@drawable/bom_f01" android:duration="80" />
+	<item android:drawable="@drawable/bom_f02" android:duration="80" />
+	<item android:drawable="@drawable/bom_f03" android:duration="80" />
+	<item android:drawable="@drawable/bom_f04" android:duration="80" />
+	<item android:drawable="@drawable/bom_f05" android:duration="80" />
+	<item android:drawable="@drawable/bom_f06" android:duration="80" />
+	<item android:drawable="@drawable/bom_f07" android:duration="80" />
+	<item android:drawable="@drawable/bom_f08" android:duration="80" />
+	<item android:drawable="@drawable/bom_f09" android:duration="80" />
+	<item android:drawable="@drawable/bom_f10" android:duration="80" />
+	<item android:drawable="@drawable/bom_f11" android:duration="80" />
+	<item android:drawable="@drawable/bom_f12" android:duration="80" />
+	<item android:drawable="@drawable/bom_f13" android:duration="80" />
+	<item android:drawable="@drawable/bom_f14" android:duration="80" />
+	<item android:drawable="@drawable/bom_f15" android:duration="80" />
+	<item android:drawable="@drawable/bom_f16" android:duration="80" />
+	<item android:drawable="@drawable/bom_f16" android:duration="80" />
+	<item android:drawable="@drawable/bom_f17" android:duration="80" />
+	<item android:drawable="@drawable/bom_f18" android:duration="80" />
+	<item android:drawable="@drawable/bom_f19" android:duration="80" />
+	<item android:drawable="@drawable/bom_f20" android:duration="80" />
+	<item android:drawable="@drawable/bom_f21" android:duration="80" />
+	<item android:drawable="@drawable/bom_f22" android:duration="80" />
+	<item android:drawable="@drawable/bom_f23" android:duration="80" />
+	<item android:drawable="@drawable/bom_f24" android:duration="80" />
+	<item android:drawable="@drawable/bom_f25" android:duration="80" />
+	<item android:drawable="@drawable/bom_f26" android:duration="80" />
+	<item android:drawable="@drawable/bom_f27" android:duration="80" />
+</animation-list>

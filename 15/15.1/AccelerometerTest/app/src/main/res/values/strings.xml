@@ -1,0 +1,4 @@
+<resources>
+	<string name="app_name">AccelerometerTest</string>
+	<string name="tip">传感器返回的值</string>
+</resources>

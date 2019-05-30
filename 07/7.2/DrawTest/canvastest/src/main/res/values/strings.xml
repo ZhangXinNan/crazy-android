@@ -1,0 +1,10 @@
+<resources>
+	<string name="app_name">DrawTest</string>
+	<string name="circle">圆形</string>
+	<string name="square">正方形</string>
+	<string name="rect">长方形</string>
+	<string name="round_rect">圆角矩形</string>
+	<string name="oval">椭圆形</string>
+	<string name="triangle">三角形</string>
+	<string name="pentagon">五边形</string>
+</resources>

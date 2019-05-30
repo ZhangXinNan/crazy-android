@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+	<!-- 普通图片按钮 -->
+	<ImageButton
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:src="@drawable/blue"/>
+	<!-- 按下时显示不同图片的按钮 -->
+	<ImageButton
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:src="@drawable/button_selector"/>
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_margin="10sp"
+		android:layout_gravity="center_horizontal">
+		<!-- 分别定义两个ZoomButton，并分别使用btn_minus和btn_plus图片 -->
+		<ZoomButton
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:id="@+id/btn_zoom_down"
+			android:src="@android:drawable/btn_minus" />
+		<ZoomButton
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:id="@+id/btn_zoom_up"
+			android:src="@android:drawable/btn_plus" />
+	</LinearLayout>
+	<!-- 定义ZoomControls组件 -->
+	<ZoomControls android:id="@+id/zoomControls1"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center_horizontal"/>
+</LinearLayout>

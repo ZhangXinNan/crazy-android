@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+	<!-- 指定获得焦点时的颜色 -->
+	<item android:state_focused="true"
+		android:color="#f44"/>
+	<!-- 指定失去焦点时的颜色 -->
+	<item android:state_focused="false"
+		android:color="#ccf"/>
+</selector>

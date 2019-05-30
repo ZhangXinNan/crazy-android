@@ -1,0 +1,5 @@
+<resources>
+	<string name="app_name">ShowWave</string>
+	<string name="sin">正弦曲线</string>
+	<string name="cos">余弦曲线</string>
+</resources>

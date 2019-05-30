@@ -1,0 +1,4 @@
+<resources>
+	<string name="app_name">CaptureScreen</string>
+	<string name="screen_capture">屏幕捕捉</string>
+</resources>

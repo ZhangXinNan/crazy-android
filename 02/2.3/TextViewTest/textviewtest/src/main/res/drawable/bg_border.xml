@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+	<!-- 设置背景色为透明色 -->
+	<solid android:color="#0000"/>
+	<!-- 设置红色边框 -->
+	<stroke android:width="2dp" android:color="#f00" />
+</shape>

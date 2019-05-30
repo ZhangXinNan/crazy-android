@@ -1,0 +1,4 @@
+<resources>
+	<string name="app_name">带数据集的AppWidget</string>
+	<string name="no_item">没有列表项</string>
+</resources>

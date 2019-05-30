@@ -1,0 +1,4 @@
+<resources>
+	<string name="app_name">All</string>
+	<string name="provider_list">系统所有的LocationProvider列表</string>
+</resources>

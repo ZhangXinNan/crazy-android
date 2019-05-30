@@ -1,0 +1,10 @@
+<resources>
+	<string name="app_name">LocationMap</string>
+	<string	name="txtLong">经度:</string>
+	<string	name="txtLat">纬度:</string>
+	<string	name="loc">定位</string>
+	<string	name="lng">113.395563</string>
+	<string	name="lat">23.126222</string>
+	<string	name="gps">GPS定位</string>
+	<string	name="manul">手动定位</string>
+</resources>

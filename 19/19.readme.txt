@@ -1,0 +1,23 @@
+部署Web应用请按如下步骤进行:
+1. 将mysql.sql脚本中的语句导入MySQL数据库。
+2. 修改auction\WEB-INF路径下的applicationContext.xml文件，
+   将其中的数据库连接信息修改为你的数据库连接信息。
+3. 在CLASSPAT环境变量中添加Tomcat安装目录下lib子目录中servlet-api.jar、
+   jsp-api.jar和websocket-api.jar。
+4. 进入auction\WEB-INF路径下，启动Dos或shell窗口，输入
+   ant compile -- 该命令用于编译应用。
+5. 将整个应用复制到%TOMCAT_HOME%/webapps路径（务必使用Tomcat 9.0.x版本）下，
+   启动Tomcat服务器即可。
+6. 两个内置用户的用户名和密码为：
+   mysql mysql
+   tomcat tomcat
+
+注意：本系统并未提供注册用户的功能，读者暂时只能使用系统提供的两个用户。
+
+部署Android客户端请按如下步骤进行：
+1. 修改HttpUtil类的BASE_URL常量，让该常量中的IP地址、端口号修改
+   成上面Web应用所部署的主机的IP地址（不可使用localhost或127.0.0.1）、端口。
+2. 如果在部署Web应用的主机上运行Android模拟器，并在该模拟器上运行
+   该Android客户端，运行该Android端即可。
+3. 如果在真机上运行该Android客户端，请保证真机与部署Web应用的主机
+   位于同一个局域网内（通常建议让真机通过wifi接入该局域网即可）。

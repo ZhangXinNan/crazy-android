@@ -1,0 +1,55 @@
+// 定义hello1任务，传入的代码块负责配置该任务
+task hello1 {
+	println "配置第一个任务"
+}
+// 定义hello2任务，传入的代码块负责配置该任务
+task hello2 {
+	println "配置第二个任务"
+	// 调用doLast方法为Task添加Action
+	doLast {
+		// 使用循环
+		for(i in 0..<5){
+			println i
+		}
+	}
+	// 调用doFrist方法为Task添加Action
+	doFirst {
+		// 定义变量
+		def s = "fkjava.org"
+		// 输出字符串模板
+		println "开始执行第二个任务:$s"
+	}
+}
+// 调用Project的tasks属性（TaskContainer）的create方法来创建task
+tasks.create(name: 'showTasks') {
+	doLast{
+		// 查看Project的tasks属性的类型
+		println "tasks属性的类型：${tasks.class}"
+		// 遍历tasks属性
+		tasks.each {e ->
+			println e
+		}
+	}
+}
+// 调用Project的tasks属性（TaskContainer）的create方法来创建Task
+// dependsOn指定该Task依赖hello2，该Task的类型是Copy（文件拷贝）
+tasks.create(name: 'fkTask', dependsOn:'hello2', type: Copy) {
+	from 'books.xml'
+	into 'dist'
+}
+// 应用名为'java'的插件，主要为了引入JavaCompile、JavaExec两个任务
+apply plugin: 'java'
+// 指定该任务的类型为JavaCompile
+task compile(type: JavaCompile){
+	source = fileTree('src/main/java')
+	classpath = sourceSets.main.compileClasspath
+	destinationDir = file('build/classes/main')
+	options.fork = true
+	options.incremental = true
+}
+// 指定该任务的类型为JavaExec
+task run(type: JavaExec, dependsOn: 'compile'){
+	classpath = sourceSets.main.runtimeClasspath
+	// 指定主类为lee.HelloWorld
+	main = 'lee.HelloWorld'
+}

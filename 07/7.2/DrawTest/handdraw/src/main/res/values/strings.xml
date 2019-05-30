@@ -1,0 +1,13 @@
+<resources>
+	<string name="app_name">HandDraw</string>
+	<string name="width_1">1像素</string>
+	<string name="width_3">3像素</string>
+	<string name="width_5">5像素</string>
+	<string name="color_red">红色</string>
+	<string name="color_green">绿色</string>
+	<string name="color_blue">蓝色</string>
+	<string name="color">画笔颜色</string>
+	<string name="width">画笔宽度</string>
+	<string name="blur">模糊效果</string>
+	<string name="emboss">浮雕效果</string>
+</resources>

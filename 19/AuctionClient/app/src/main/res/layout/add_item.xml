@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:padding="@dimen/title_padding"
+	android:stretchColumns="1">
+
+	<TextView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center"
+		android:padding="@dimen/title_padding"
+		android:text="@string/add_item_title"
+		android:textSize="@dimen/label_font_size" />
+	<!-- 输入物品名称的行 -->
+	<TableRow>
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/item_name"
+			android:textSize="@dimen/label_font_size" />
+
+		<EditText
+			android:id="@+id/itemName"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:inputType="text" />
+	</TableRow>
+	<!-- 输入物品描述的行 -->
+	<TableRow>
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/item_desc"
+			android:textSize="@dimen/label_font_size" />
+
+		<EditText
+			android:id="@+id/itemDesc"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:inputType="text" />
+	</TableRow>
+	<!-- 输入物品备注的行 -->
+	<TableRow>
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/remark"
+			android:textSize="@dimen/label_font_size" />
+
+		<EditText
+			android:id="@+id/itemRemark"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:inputType="text" />
+	</TableRow>
+	<!-- 输入起拍价格的行 -->
+	<TableRow>
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/init_price"
+			android:textSize="@dimen/label_font_size" />
+
+		<EditText
+			android:id="@+id/initPrice"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:inputType="numberDecimal" />
+	</TableRow>
+	<!-- 选择有效时间的行 -->
+	<TableRow>
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/avail_time"
+			android:textSize="@dimen/label_font_size" />
+
+		<Spinner
+			android:id="@+id/availTime"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:entries="@array/availTime" />
+	</TableRow>
+	<!-- 选择选择物品种类的行 -->
+	<TableRow>
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/item_kind"
+			android:textSize="@dimen/label_font_size" />
+
+		<Spinner
+			android:id="@+id/itemKind"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content" />
+	</TableRow>
+	<!-- 定义按钮的行 -->
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center">
+
+		<Button
+			android:id="@+id/bnAdd"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:text="@string/add" />
+
+		<Button
+			android:id="@+id/bnCancel"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:text="@string/cancel" />
+	</LinearLayout>
+</TableLayout>

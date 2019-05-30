@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<!-- 定义activity_book_list实际引用@layout/activity_main资源 -->
+	<item type="layout" name="activity_book_list">
+		@layout/activity_main</item>
+</resources>

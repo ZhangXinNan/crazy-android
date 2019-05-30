@@ -1,0 +1,12 @@
+<resources>
+	<string name="app_name">SensorTest</string>
+	<string name="orientation">方向传感器返回的值</string>
+	<string name="gyro">陀螺仪传感器返回的值</string>
+	<string name="magnetic">磁场传感器返回的值</string>
+	<string name="gravity">重力传感器返回的值</string>
+	<string name="linearAcc">线性加速度传感器返回的值</string>
+	<string name="temperature">温度传感器返回的值</string>
+	<string name="humidity">湿度传感器返回的值</string>
+	<string name="light">光传感器返回的值</string>
+	<string name="pressure">压力传感器返回的值</string>
+</resources>

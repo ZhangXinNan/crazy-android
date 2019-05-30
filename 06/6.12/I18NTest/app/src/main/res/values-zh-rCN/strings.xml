@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="ok">确定</string>
+	<string name="cancel">取消</string>
+	<string name="msg">你好啊，可爱的小机器人！</string>
+</resources>

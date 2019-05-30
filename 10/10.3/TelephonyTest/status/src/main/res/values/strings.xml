@@ -1,0 +1,4 @@
+<resources>
+	<string name="app_name">TelephonyTest</string>
+	<string name="permission_tip">您必须授予该应用访问手机状态、读取手机定位的权限</string>
+</resources>

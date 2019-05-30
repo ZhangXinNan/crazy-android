@@ -1,0 +1,57 @@
+apply plugin: 'java'
+apply plugin: 'application'
+
+mainClassName = 'lee.HelloWorld'  
+
+//// 定义仓库 
+//repositories {
+//	// 使用Maven默认的中央仓库
+//	mavenCentral()
+//}
+// 定义仓库
+repositories {
+	// maven远程仓库
+	maven {
+		// 显式指定Maven仓库的URL
+		url "http://repo2.maven.org/maven2/"
+	}
+}
+//// 定义仓库
+//repositories {
+//	// maven远程仓库
+//	maven {
+//		// 显式指定本地磁盘路径作为Maven仓库的URL
+//		url "g:/abc"
+//	}
+//}
+configurations {
+	// 配置名为fkDependency的依赖组
+	fkDependency
+}
+dependencies {
+//	// 配置依赖JAR包
+//	fkDependency group:'commons-logging', name:'commons-logging', version:'1.2'
+//	// 简写为如下形式
+//	fkDependency 'commons-logging:commons-logging:1.2'
+//	fkDependency (group:'commons-logging', name:'commons-logging', version:'1.2') {
+//		// 提供额外配置...
+//	}
+//	// 简写为如下形式
+//	fkDependency ('commons-logging:commons-logging:1.2') {
+//		// 提供额外配置...
+//	}
+	// 以数组形式添加多个JAR包
+	fkDependency 'commons-logging:commons-logging:1.2',
+		"org.apache.commons:commons-dbcp2:2.2.0"
+	// 以数组形式添加多个JAR包
+	implementation 'commons-logging:commons-logging:1.2',
+		"org.apache.commons:commons-dbcp2:2.2.0"
+
+}
+
+task showFkDependency {
+	doLast{
+		// 输出fkDependency的依赖的JAR包
+		println configurations.fkDependency.asPath
+	}
+}

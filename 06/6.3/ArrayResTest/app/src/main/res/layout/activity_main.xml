@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:gravity="center_horizontal"
+	android:orientation="vertical">
+	<!-- 使用字符串资源、尺寸资源 -->
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:gravity="center"
+		android:text="@string/app_name"
+		android:textSize="@dimen/title_font_size" />
+	<!-- 定义一个GridView组件，使用尺寸资源中定义的长度来指定水平间距、垂直间距 -->
+	<GridView
+		android:id="@+id/grid01"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:gravity="center"
+		android:numColumns="3"
+		android:horizontalSpacing="@dimen/spacing"
+		android:verticalSpacing="@dimen/spacing"/>
+	<!-- 定义ListView组件，使用了数组资源 -->
+	<ListView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:entries="@array/books"/>
+</LinearLayout>

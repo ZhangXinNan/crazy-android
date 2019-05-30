@@ -1,0 +1,11 @@
+<resources>
+	<string name="app_name">Geocoder</string>
+	<string name="txtLong">经度:</string>
+	<string name="txtLat">纬度:</string>
+	<string	name="lng">113.396</string>
+	<string	name="lat">23.126</string>
+	<string	name="txtAddress">地址:</string>
+	<string	name="address">沣宏大厦</string>
+	<string name="parse">解析</string>
+	<string name="reverse">反向解析</string>
+</resources>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context=".MainActivity">
+	<ViewFlipper
+		android:id="@+id/details"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:flipInterval="1000">
+		<ImageView
+			android:src="@drawable/java"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content">
+		</ImageView>
+		<ImageView
+			android:src="@drawable/android"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content">
+		</ImageView>
+		<ImageView
+			android:src="@drawable/javaee"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content">
+		</ImageView>
+	</ViewFlipper>
+
+	<Button
+		android:id="@+id/button"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginStart="8dp"
+		android:layout_marginBottom="8dp"
+		android:onClick="prev"
+		android:text="&lt;"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintStart_toStartOf="parent" />
+
+	<Button
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginStart="8dp"
+		android:layout_marginEnd="8dp"
+		android:layout_marginBottom="8dp"
+		android:onClick="auto"
+		android:text="自动播放"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toStartOf="@+id/button2"
+		app:layout_constraintStart_toEndOf="@+id/button" />
+
+	<Button
+		android:id="@+id/button2"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginEnd="8dp"
+		android:layout_marginBottom="8dp"
+		android:onClick="next"
+		android:text="&gt;"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent" />
+</android.support.constraint.ConstraintLayout>
+

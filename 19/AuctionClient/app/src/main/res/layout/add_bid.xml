@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+	<TableLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:padding="@dimen/title_padding"
+		android:stretchColumns="1">
+
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:gravity="center"
+			android:padding="@dimen/title_padding"
+			android:text="@string/item_detail_title"
+			android:textSize="@dimen/label_font_size" />
+		<!-- 显示物品名称的行 -->
+		<TableRow>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/item_name"
+				android:textSize="@dimen/label_font_size" />
+
+			<TextView
+				android:id="@+id/itemName"
+				style="@style/tv_show"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content" />
+		</TableRow>
+		<!-- 显示物品描述的行 -->
+		<TableRow>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/item_desc"
+				android:textSize="@dimen/label_font_size" />
+
+			<TextView
+				android:id="@+id/itemDesc"
+				style="@style/tv_show"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content" />
+		</TableRow>
+		<!-- 显示物品备注的行 -->
+		<TableRow>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/remark"
+				android:textSize="@dimen/label_font_size" />
+
+			<TextView
+				android:id="@+id/itemRemark"
+				style="@style/tv_show"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content" />
+		</TableRow>
+		<!-- 显示物品种类的行 -->
+		<TableRow>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/item_kind"
+				android:textSize="@dimen/label_font_size" />
+
+			<TextView
+				android:id="@+id/itemKind"
+				style="@style/tv_show"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content" />
+		</TableRow>
+		<!-- 显示起拍价格的行 -->
+		<TableRow>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/init_price"
+				android:textSize="@dimen/label_font_size" />
+
+			<TextView
+				android:id="@+id/initPrice"
+				style="@style/tv_show"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content" />
+		</TableRow>
+		<!-- 显示最高价格的行 -->
+		<TableRow>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/max_price"
+				android:textSize="@dimen/label_font_size" />
+
+			<TextView
+				android:id="@+id/maxPrice"
+				style="@style/tv_show"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content" />
+		</TableRow>
+		<!-- 显示结束时间的行 -->
+		<TableRow>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/end_time"
+				android:textSize="@dimen/label_font_size" />
+
+			<TextView
+				android:id="@+id/endTime"
+				style="@style/tv_show"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content" />
+		</TableRow>
+		<!-- 输入竞拍价格的行 -->
+		<TableRow>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/you_bid"
+				android:textSize="@dimen/label_font_size" />
+
+			<EditText
+				android:id="@+id/bidPrice"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:inputType="numberDecimal" />
+		</TableRow>
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content">
+
+			<Button
+				android:id="@+id/bnAdd"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				android:text="@string/bid" />
+
+			<Button
+				android:id="@+id/bnCancel"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				android:text="@string/cancel" />
+		</LinearLayout>
+	</TableLayout>
+</ScrollView>

@@ -1,0 +1,1 @@
+include ':imageviewtest', ':imagebuttontest', ':quickcontactbadgetest', ':floatingactionbutton'

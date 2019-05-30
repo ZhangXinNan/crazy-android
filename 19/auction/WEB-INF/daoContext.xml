@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Spring配置文件的根元素，并指定Schema信息 -->
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<!-- 配置daoTemplate，作为所有DAO组件的模板 -->
+	<!-- 为DAO组件注入SessionFactory引用 -->
+	<bean id="daoTemplate" abstract="true"
+		p:sessionFactory-ref="sessionFactory"/>
+	<!-- 配置stateDao组件 -->
+	<bean id="stateDao" parent="daoTemplate"
+		class="org.crazyit.auction.dao.impl.StateDaoHibernate"/>
+	<!-- 配置kindDao组件 -->
+	<bean id="kindDao" parent="daoTemplate"
+		class="org.crazyit.auction.dao.impl.KindDaoHibernate"/>
+	<!-- 配置auctionDao组件 -->
+	<bean id="auctionUserDao" parent="daoTemplate"
+		class="org.crazyit.auction.dao.impl.AuctionUserDaoHibernate"/>
+	<!-- 配置bidDao组件 -->
+	<bean id="bidDao" parent="daoTemplate"
+		class="org.crazyit.auction.dao.impl.BidDaoHibernate"/>
+	<!-- 配置itemDao组件 -->
+	<bean id="itemDao" parent="daoTemplate"
+		class="org.crazyit.auction.dao.impl.ItemDaoHibernate"/>
+</beans>

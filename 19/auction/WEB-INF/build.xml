@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project name="java" basedir="." default="help">
+	<property name="src" value="src"/>
+	<property name="dest" value="classes"/>
+
+	<path id="classpath">
+		<fileset dir="lib">
+			<include name="**/*.jar"/>
+		</fileset>
+		<pathelement path="${dest}"/>
+	</path>
+
+	<!-- 编译src目录下所有源代码 -->
+	<target name="compile" description="Compile all source code">
+		<delete dir="${dest}"/>
+		<mkdir dir="${dest}"/>
+		<copy todir="${dest}">
+			<fileset dir="${src}">
+				<exclude name="**/*.java"/>
+			</fileset>		
+		</copy>
+		<javac destdir="${dest}" debug="true" includeantruntime="yes"
+			deprecation="true" optimize="false" failonerror="true"
+			encoding="utf-8">
+			<src path="${src}"/>
+			<classpath refid="classpath"/>
+		</javac>
+	</target>
+
+</project>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">字符串、颜色、尺寸资源</string>
+	<string name="c1">F00</string>
+	<string name="c2">0F0</string>
+	<string name="c3">00F</string>
+	<string name="c4">0FF</string>
+	<string name="c5">F0F</string>
+	<string name="c6">FF0</string>
+	<string name="c7">07F</string>
+	<string name="c8">70F</string>
+	<string name="c9">F70</string>
+</resources>

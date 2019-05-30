@@ -1,0 +1,1 @@
+include ':textviewtest', ':edittexttest', ':buttontest', ':ninepatchtest', ':checkbuttontest', ':togglebuttontest', ':clocktest', ':chronometertest'

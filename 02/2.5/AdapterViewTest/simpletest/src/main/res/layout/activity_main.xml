@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+	<!-- 直接使用数组资源给出列表项 -->
+	<!-- 设置使用红色的分隔条 -->
+	<ListView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:entries="@array/books"
+		android:divider="#f00"
+		android:dividerHeight="2px"
+		android:headerDividersEnabled="false"/>
+</LinearLayout>

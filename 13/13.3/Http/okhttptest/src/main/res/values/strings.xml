@@ -1,0 +1,7 @@
+<resources>
+	<string name="app_name">OkHttpTest</string>
+	<string name="get">访问页面</string>
+	<string name="login">登录系统</string>
+	<string name="name">用户名</string>
+	<string name="pass">密   码</string>
+</resources>

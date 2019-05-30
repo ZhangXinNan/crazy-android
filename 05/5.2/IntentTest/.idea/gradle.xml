@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/actionattr" />
+            <option value="$PROJECT_DIR$/actioncateattr" />
+            <option value="$PROJECT_DIR$/actiondata" />
+            <option value="$PROJECT_DIR$/component" />
+            <option value="$PROJECT_DIR$/datatypeattr" />
+            <option value="$PROJECT_DIR$/datatypeoverride" />
+            <option value="$PROJECT_DIR$/returnhome" />
+            <option value="$PROJECT_DIR$/sysaction" />
+          </set>
+        </option>
+        <option name="resolveModulePerSourceSet" value="false" />
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>

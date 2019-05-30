@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+	android:shape="oval">
+	<!-- 定义填充渐变颜色 -->
+	<gradient
+		android:startColor="#ff0"
+		android:endColor="#00f"
+		android:angle="45"
+		android:type="sweep"/>
+	<!-- 设置内填充 -->
+	<padding android:left="7dp"
+		android:top="7dp"
+		android:right="7dp"
+		android:bottom="7dp" />
+	<!-- 设置圆角矩形 -->
+	<corners android:radius="8dp" />
+</shape>

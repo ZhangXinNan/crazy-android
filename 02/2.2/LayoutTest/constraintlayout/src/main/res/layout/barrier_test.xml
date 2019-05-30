@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+
+	<TextView
+		android:id="@+id/textView1"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginStart="11dp"
+		android:layout_marginTop="16dp"
+		android:text="用户名"
+		android:textSize="24sp"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent" />
+
+	<TextView
+		android:id="@+id/textView2"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="22dp"
+		android:text="密码"
+		android:textSize="24sp"
+		app:layout_constraintStart_toStartOf="@+id/textView1"
+		app:layout_constraintTop_toBottomOf="@+id/textView1" />
+
+	<android.support.constraint.Barrier
+		android:id="@+id/barrier"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		app:constraint_referenced_ids="textView1,textView2"
+		app:barrierDirection="right"/>
+
+	<EditText
+		android:id="@+id/editText"
+		android:layout_width="0dp"
+		android:layout_height="wrap_content"
+		android:layout_marginStart="20dp"
+		android:layout_marginTop="16dp"
+		android:ems="10"
+		android:textSize="12dp"
+		android:inputType="textPersonName"
+		android:text="Name"
+		app:layout_constraintStart_toEndOf="@+id/barrier"
+		app:layout_constraintTop_toTopOf="parent" />
+
+	<EditText
+		android:id="@+id/editText2"
+		android:layout_width="0dp"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="8dp"
+		android:ems="10"
+		android:textSize="12dp"
+		android:inputType="textPersonName"
+		android:text="Name"
+		app:layout_constraintStart_toStartOf="@+id/editText"
+		app:layout_constraintTop_toBottomOf="@+id/editText" />
+</android.support.constraint.ConstraintLayout>

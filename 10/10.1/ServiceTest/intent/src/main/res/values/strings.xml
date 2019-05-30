@@ -1,0 +1,5 @@
+<resources>
+	<string name="app_name">Intent</string>
+	<string name="start_service">启动普通Service</string>
+	<string name="start_intent_service">启动IntentService</string>
+</resources>

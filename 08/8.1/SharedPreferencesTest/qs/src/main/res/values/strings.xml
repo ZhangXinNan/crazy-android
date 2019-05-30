@@ -1,0 +1,5 @@
+<resources>
+	<string name="app_name">SharedPreferencesTest</string>
+	<string name="write">写入数据</string>
+	<string name="read">读取数据</string>
+</resources>

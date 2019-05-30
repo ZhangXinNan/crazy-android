@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<!-- 定义一个Drawable数组 -->
+	<array name="plain_arr">
+		<item>@color/c1</item>
+		<item>@color/c2</item>
+		<item>@color/c3</item>
+		<item>@color/c4</item>
+		<item>@color/c5</item>
+		<item>@color/c6</item>
+		<item>@color/c7</item>
+		<item>@color/c8</item>
+		<item>@color/c9</item>
+	</array>
+	<!-- 定义字符串数组 -->
+	<string-array name="string_arr">
+		<item>@string/c1</item>
+		<item>@string/c2</item>
+		<item>@string/c3</item>
+		<item>@string/c4</item>
+		<item>@string/c5</item>
+		<item>@string/c6</item>
+		<item>@string/c7</item>
+		<item>@string/c8</item>
+		<item>@string/c9</item>
+	</string-array>
+	<!-- 定义字符串数组 -->
+	<string-array name="books">
+		<item>疯狂Java讲义</item>
+		<item>疯狂前端开发讲义</item>
+		<item>疯狂Android讲义</item>
+	</string-array>
+</resources>

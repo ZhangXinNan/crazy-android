@@ -1,0 +1,4 @@
+<resources>
+	<string name="app_name">NotificationTest</string>
+	<string name="other_activity">被启动的Activity</string>
+</resources>

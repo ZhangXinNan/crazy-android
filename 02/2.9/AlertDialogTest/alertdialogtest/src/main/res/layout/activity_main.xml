@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:gravity="center_horizontal"
+	android:orientation="vertical">
+	<!-- 显示一个普通的文本编辑框组件 -->
+	<EditText
+		android:id="@+id/show"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:editable="false" />
+	<!-- 定义一个普通的按钮组件 -->
+	<Button
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:onClick="simple"
+		android:text="简单对话框" />
+	<!-- 定义一个普通的按钮组件 -->
+	<Button
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:onClick="simpleList"
+		android:text="简单列表项对话框" />
+	<!-- 定义一个普通的按钮组件 -->
+	<Button
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:onClick="singleChoice"
+		android:text="单选列表项对话框" />
+	<!-- 定义一个普通的按钮组件 -->
+	<Button
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:onClick="multiChoice"
+		android:text="多选列表项对话框" />
+	<!-- 定义一个普通的按钮组件 -->
+	<Button
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:onClick="customList"
+		android:text="自定义列表项对话框" />
+	<!-- 定义一个普通的按钮组件 -->
+	<Button
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:onClick="customView"
+		android:text="自定义View对话框" />
+</LinearLayout>

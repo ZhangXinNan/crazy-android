@@ -1,0 +1,9 @@
+<resources>
+	<string name="app_name">SysProvider</string>
+	<string name="search">查询</string>
+	<string name="add">添加</string>
+	<string name="name">联系人姓名</string>
+	<string name="phone">电话</string>
+	<string name="email">Email</string>
+	<string name="permission_tip">您必须授予程序读写联系人信息的权限</string>
+</resources>

@@ -1,0 +1,18 @@
+// 定义fileContentCopy任务
+task fileContentCopy {
+	// 定义代表source目录的文件集
+	def sourceTxt = fileTree("source")
+	def dest = file('dist.txt')
+	// 定义该任务的输入、输出
+	inputs.dir sourceTxt
+	outputs.file dest
+	doLast {
+		// 调用File对象的withPrintWriter方法
+		dest.withPrintWriter { writer ->
+			// 调用sourceTxt的each方法遍历每个文件
+			sourceTxt.each { s ->
+				writer.write(s.text)
+			}
+		}
+	}
+}

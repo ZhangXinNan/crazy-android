@@ -1,0 +1,5 @@
+<resources>
+	<string name="app_name">Speech</string>
+	<string name="speech">朗读</string>
+	<string name="record">记录声音</string>
+</resources>

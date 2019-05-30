@@ -1,0 +1,8 @@
+<resources>
+	<string name="app_name">LayoutTest</string>
+	<string name="bn1">按钮一</string>
+	<string name="bn2">按钮二</string>
+	<string name="bn3">按钮三</string>
+	<string name="bn4">按纽四</string>
+	<string name="bn5">按钮五</string>
+</resources>

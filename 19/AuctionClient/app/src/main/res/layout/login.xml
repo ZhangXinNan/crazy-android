@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="400dp"
+	android:layout_height="match_parent"
+	android:layout_gravity="center_horizontal"
+	android:stretchColumns="1">
+
+	<ImageView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:contentDescription="@string/app_name"
+		android:scaleType="fitCenter"
+		android:src="@drawable/logo" />
+
+	<TextView
+		android:id="@+id/TextView"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center"
+		android:padding="@dimen/title_padding"
+		android:text="@string/welcome"
+		android:textSize="@dimen/label_font_size" />
+	<!-- 输入用户名的行 -->
+	<TableRow>
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:labelFor="@+id/userEditText"
+			android:text="@string/user_name"
+			android:textSize="@dimen/label_font_size" />
+
+		<EditText
+			android:id="@+id/userEditText"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:inputType="text" />
+	</TableRow>
+	<!-- 输入密码的行 -->
+	<TableRow>
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:labelFor="@+id/pwdEditText"
+			android:text="@string/user_pass"
+			android:textSize="@dimen/label_font_size" />
+
+		<EditText
+			android:id="@+id/pwdEditText"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:inputType="textPassword"
+			android:text="" />
+	</TableRow>
+	<!-- 定义登录、取消按钮的行 -->
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal">
+		<Button
+			android:id="@+id/bnLogin"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:text="@string/login"
+			android:layout_weight="1"/>
+
+		<Button
+			android:id="@+id/bnCancel"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:text="@string/cancel"
+			android:layout_weight="1"/>
+	</LinearLayout>
+</TableLayout>

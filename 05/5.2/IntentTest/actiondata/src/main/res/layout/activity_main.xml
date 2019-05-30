@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:gravity="center_horizontal"
+	android:orientation="vertical">
+
+	<Button
+		android:id="@+id/bn"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:text="打开疯狂Java联盟" />
+
+	<Button
+		android:id="@+id/edit"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:text="编辑标识为1的联系人" />
+
+	<Button
+		android:id="@+id/call"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:text="向13800138000拨号" />
+</LinearLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/buttontest" />
+            <option value="$PROJECT_DIR$/checkbuttontest" />
+            <option value="$PROJECT_DIR$/chronometertest" />
+            <option value="$PROJECT_DIR$/clocktest" />
+            <option value="$PROJECT_DIR$/edittexttest" />
+            <option value="$PROJECT_DIR$/ninepatchtest" />
+            <option value="$PROJECT_DIR$/textviewtest" />
+            <option value="$PROJECT_DIR$/togglebuttontest" />
+          </set>
+        </option>
+        <option name="resolveModulePerSourceSet" value="false" />
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>

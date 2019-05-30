@@ -1,0 +1,5 @@
+<resources>
+	<string name="app_name">RawResTest</string>
+	<string name="play_raw">播放Raw声音</string>
+	<string name="play_asset">播放Asset声音</string>
+</resources>

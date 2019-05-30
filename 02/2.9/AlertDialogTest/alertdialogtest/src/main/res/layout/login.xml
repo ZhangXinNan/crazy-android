@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/loginForm"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+
+	<TableRow android:paddingStart="12dp">
+
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="用户名:"
+			android:textSize="20sp" />
+		<!-- 输入用户名的文本框 -->
+		<EditText
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:hint="请填写登录账号"
+			android:selectAllOnFocus="true" />
+	</TableRow>
+
+	<TableRow android:paddingStart="12dp">
+
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="密码:"
+			android:textSize="20sp" />
+		<!-- 输入密码的文本框 -->
+		<EditText
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:hint="请填写密码"
+			android:inputType="textPassword" />
+	</TableRow>
+
+	<TableRow android:paddingStart="12dp">
+
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="电话号码:"
+			android:textSize="20sp" />
+		<!-- 输入电话号码的文本框 -->
+		<EditText
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:hint="请填写您的电话号码"
+			android:inputType="phone"
+			android:selectAllOnFocus="true" />
+	</TableRow>
+</TableLayout>
+

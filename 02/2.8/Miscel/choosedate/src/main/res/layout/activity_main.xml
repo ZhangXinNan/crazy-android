@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+	<TextView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:textSize="22sp"
+		android:padding="10dp"
+		android:text="选择购买本书的具体时间"/>
+	<!-- 定义一个DatePicker组件 -->
+	<DatePicker android:id="@+id/datePicker"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center_horizontal"
+		android:startYear="2000"
+		android:endYear="2018"
+		android:headerBackground="#f0f"
+		android:calendarViewShown="true"
+		android:spinnersShown="true"/>
+	<!-- 定义一个TimePicker组件 -->
+	<TimePicker android:id="@+id/timePicker"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center_horizontal"/>
+</LinearLayout>

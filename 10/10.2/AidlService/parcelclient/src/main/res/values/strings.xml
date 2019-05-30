@@ -1,0 +1,5 @@
+<resources>
+	<string name="app_name">ParcelClient</string>
+	<string name="get">获取远程Service的状态</string>
+	<string name="person">请输入用户名</string>
+</resources>

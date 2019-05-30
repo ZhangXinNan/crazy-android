@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="horizontal">
+	<!-- 定义8个ImageView来显示液晶数字 -->
+	<ImageView
+		android:id="@+id/img01"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content" />
+
+	<ImageView
+		android:id="@+id/img02"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content" />
+
+	<ImageView
+		android:id="@+id/img03"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:src="@drawable/su00" />
+
+	<ImageView
+		android:id="@+id/img04"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content" />
+
+	<ImageView
+		android:id="@+id/img05"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content" />
+
+	<ImageView
+		android:id="@+id/img06"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:src="@drawable/su00" />
+
+	<ImageView
+		android:id="@+id/img07"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content" />
+
+	<ImageView
+		android:id="@+id/img08"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content" />
+</LinearLayout>

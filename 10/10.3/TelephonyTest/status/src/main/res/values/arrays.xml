@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<!-- 声明一个名为statusNames的字符串数组 -->
+	<string-array name="statusNames">
+		<item>设备编号</item>
+		<item>软件版本</item>
+		<item>网络运营商代号</item>
+		<item>网络运营商名称</item>
+		<item>手机制式</item>
+		<item>蜂窝状态信息</item>
+		<item>SIM卡的国别</item>
+		<item>SIM卡序列号</item>
+		<item>SIM卡状态</item>		
+	</string-array>
+	<!-- 声明一个名为simState的字符串数组 -->
+	<string-array name="simState">
+		<item>状态未知</item>
+		<item>无SIM卡</item>
+		<item>被PIN加锁</item>
+		<item>被PUK加锁</item>
+		<item>被NetWork PIN加锁</item>
+		<item>已准备好</item>
+		<item>未准备好</item>
+		<item>SIM损毁</item>
+		<item>读写SIM卡出错</item>
+		<item>SIM卡被限制使用</item>
+	</string-array>
+	<!-- 声明一个名为phoneType的字符串数组 -->
+	<string-array name="phoneType">	
+		<item>未知</item>
+		<item>GSM</item>
+		<item>CDMA</item>
+		<item>SIP</item>
+	</string-array>	
+</resources>

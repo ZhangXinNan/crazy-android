@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/adapterviewflippertest" />
+            <option value="$PROJECT_DIR$/arrayadaptertest" />
+            <option value="$PROJECT_DIR$/autocompletetextviewtest" />
+            <option value="$PROJECT_DIR$/baseadaptertest" />
+            <option value="$PROJECT_DIR$/expandablelistviewtest" />
+            <option value="$PROJECT_DIR$/gridviewtest" />
+            <option value="$PROJECT_DIR$/listactivitytest" />
+            <option value="$PROJECT_DIR$/recyclerviewtest" />
+            <option value="$PROJECT_DIR$/simpleadaptertest" />
+            <option value="$PROJECT_DIR$/simpletest" />
+            <option value="$PROJECT_DIR$/spinnertest" />
+            <option value="$PROJECT_DIR$/stackviewtest" />
+          </set>
+        </option>
+        <option name="resolveModulePerSourceSet" value="false" />
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>

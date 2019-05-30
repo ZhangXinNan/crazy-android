@@ -1,0 +1,14 @@
+<resources>
+	<string name="app_name">MenuResTest</string>
+	<string name="red_title">红色</string>
+	<string name="blue_title">蓝色</string>
+	<string name="green_title">绿色</string>
+	<string name="font_size">字体大小</string>
+	<string name="font_color">字体颜色</string>
+	<string name="plain_item">普通菜单项</string>
+	<string name="font_10">10号字体</string>
+	<string name="font_12">12号字体</string>
+	<string name="font_14">14号字体</string>
+	<string name="font_16">16号字体</string>
+	<string name="font_18">18号字体</string>
+</resources>

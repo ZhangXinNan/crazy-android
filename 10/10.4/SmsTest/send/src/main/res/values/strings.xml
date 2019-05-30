@@ -1,0 +1,7 @@
+<resources>
+	<string name="app_name">SmsTest</string>
+	<string name="number">收件人号码：</string>
+	<string name="content">短信内容：</string>
+	<string name="send">发送</string>
+	<string name="permission_tip">您必须授予本应用发送短信的权限</string>
+</resources>

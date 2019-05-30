@@ -1,0 +1,1 @@
+include ':simpletest', ':arrayadaptertest', ':listactivitytest', ':simpleadaptertest', ':baseadaptertest', ':autocompletetextviewtest', ':gridviewtest', ':expandablelistviewtest', ':spinnertest', ':adapterviewflippertest', ':stackviewtest', ':recyclerviewtest'

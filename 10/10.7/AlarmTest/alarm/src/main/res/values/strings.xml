@@ -1,0 +1,4 @@
+<resources>
+	<string name="app_name">AlarmTest</string>
+	<string name="setTime">设置闹铃</string>
+</resources>

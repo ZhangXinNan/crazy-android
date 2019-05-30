@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 指定动画匀速改变 -->
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+	android:interpolator="@android:anim/linear_interpolator">
+	<!-- 定义缩放变换 -->
+	<scale android:fromXScale="1.0"
+		android:toXScale="0.01"
+		android:fromYScale="1.0"
+		android:toYScale="0.01"
+		android:pivotX="50%"
+		android:pivotY="50%"
+		android:fillAfter="true"
+		android:duration="3000"/>
+	<!-- 定义透明度的变化 -->
+	<alpha
+		android:fromAlpha="1"
+		android:toAlpha="0.05"
+		android:duration="3000"/>
+	<!-- 定义旋转变换 -->
+	<rotate
+		android:fromDegrees="0"
+		android:toDegrees="1800"
+		android:pivotX="50%"
+		android:pivotY="50%"
+		android:duration="3000"/>
+</set>

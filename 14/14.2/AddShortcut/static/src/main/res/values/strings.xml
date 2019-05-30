@@ -1,0 +1,7 @@
+<resources>
+	<string name="app_name">AddShortcut</string>
+	<string name="short_label">静态快捷</string>
+	<string name="long_label">静态添加的快捷方式</string>
+	<string name="disable_message">不可用的快捷方式</string>
+	<string name="show_message">静态快捷方式打开的Activity</string>
+</resources>

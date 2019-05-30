@@ -1,0 +1,17 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:id="@+id/root">
+
+	<org.crazyit.media.AutoFitTextureView
+		android:id="@+id/texture"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content" />
+
+	<ImageButton
+		android:id="@+id/capture"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="end|bottom"
+		android:src="@drawable/capture" />
+</FrameLayout>

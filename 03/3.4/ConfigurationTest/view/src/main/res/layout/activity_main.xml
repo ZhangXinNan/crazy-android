@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:gravity="center_horizontal"
+	android:orientation="vertical">
+	<TextView
+		android:id="@+id/ori"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:padding="10dp"
+		android:textSize="18sp"
+		android:hint="显示屏幕方向" />
+	<TextView
+		android:id="@+id/navigation"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:padding="10dp"
+		android:textSize="18sp"
+		android:hint="显示手机方向控制设备" />
+	<TextView
+		android:id="@+id/touch"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:padding="10dp"
+		android:textSize="18sp"
+		android:hint="显示触摸屏状态" />
+	<TextView
+		android:id="@+id/mnc"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:padding="10dp"
+		android:textSize="18sp"
+		android:hint="显示移动网络代号" />
+	<Button
+		android:id="@+id/bn"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:padding="10dp"
+		android:textSize="18sp"
+		android:text="获取手机信息" />
+</LinearLayout>

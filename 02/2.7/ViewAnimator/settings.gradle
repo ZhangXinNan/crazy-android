@@ -1,0 +1,1 @@
+include ':viewswitchertest', ':imageswitchertest', ':textswitchertest', ':viewflippertest'

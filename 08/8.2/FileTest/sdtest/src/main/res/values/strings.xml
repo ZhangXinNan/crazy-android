@@ -1,0 +1,6 @@
+<resources>
+	<string name="app_name">SdTest</string>
+	<string name="read">读取</string>
+	<string name="write">写入</string>
+	<string name="writesd_tip">本程序要求您必须授予程序写入SD卡的权限,您可以打开Settings→Apps and notifications为App设置权限</string>
+</resources>

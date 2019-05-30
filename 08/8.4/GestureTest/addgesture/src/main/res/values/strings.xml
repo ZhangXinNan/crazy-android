@@ -1,0 +1,7 @@
+<resources>
+	<string name="app_name">AddGesture</string>
+	<string name="gesture_name">请填手势名</string>
+	<string name="gestureTip">请在屏幕上绘制手势</string>
+	<string name="bn_save">保存</string>
+	<string name="bn_cancel">取消</string>
+</resources>

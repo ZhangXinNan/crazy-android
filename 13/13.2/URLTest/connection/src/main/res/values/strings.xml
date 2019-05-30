@@ -1,0 +1,5 @@
+<resources>
+	<string name="app_name">Connection</string>
+	<string name="get">发送GET请求</string>
+	<string name="post">发送POST请求</string>
+</resources>

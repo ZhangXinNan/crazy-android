@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration>
+    <properties>  
+        <property name="LOG_HOME">d:/log</property>  
+        <property name="FILE_NAME">auction</property>  
+    </properties>  
+	<Appenders>
+		<Console name="Console"
+			target="SYSTEM_OUT">
+			<PatternLayout
+				pattern="=====LOG4J===== %r %d [%t] %-p %c %x - #%l# - %m%n" />
+		</Console>
+        <RollingRandomAccessFile name="RollingRandomAccessFile" 
+        	fileName="${LOG_HOME}/${FILE_NAME}.log" 
+        	filePattern="${LOG_HOME}/$${date:yyyy-MM}/${FILE_NAME}-%d{yyyy-MM-dd}-%i.log">
+            <PatternLayout pattern="=====LOG4J===== %r %d %p [%c] - %m%n"/>
+            <Policies>
+                <TimeBasedTriggeringPolicy interval="1" modulate="true"/>
+                <SizeBasedTriggeringPolicy size="10 MB"/>
+            </Policies>
+            <DefaultRolloverStrategy max="20"/>
+        </RollingRandomAccessFile>
+
+        <Async name="AsyncAppender">
+            <AppenderRef ref="RollingRandomAccessFile"/>
+        </Async>
+	</Appenders>
+	<Loggers>
+		<Root level="warning">
+			<AppenderRef ref="AsyncAppender" />
+			<AppenderRef ref="Console" />
+		</Root>
+	</Loggers>
+</Configuration>
+

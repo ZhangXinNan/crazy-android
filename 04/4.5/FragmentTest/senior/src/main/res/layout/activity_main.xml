@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 定义一个水平排列的LinearLayout，并指定使用中等分隔条 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:layout_marginLeft="16dp"
+	android:layout_marginRight="16dp"
+	android:divider="?android:attr/dividerHorizontal"
+	android:orientation="horizontal"
+	android:showDividers="middle">
+	<!-- 添加一个Fragment -->
+	<fragment
+		android:id="@+id/book_list"
+		android:name="org.crazyit.app.BookListFragment"
+		android:layout_width="0dp"
+		android:layout_height="match_parent"
+		android:layout_weight="1" />
+	<!-- 添加一个FrameLayout容器 -->
+	<FrameLayout
+		android:id="@+id/book_detail_container"
+		android:layout_width="0dp"
+		android:layout_height="match_parent"
+		android:layout_weight="3" />
+</LinearLayout>

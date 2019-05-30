@@ -1,0 +1,28 @@
+// 继承DefaultTask定义自定义任务
+class HelloWorldTask extends DefaultTask {
+	@Optional
+	def message = '疯狂软件教育中心'
+	// 使用@TaskAction修饰的方法被自动当成Action
+	@TaskAction
+	def test(){
+		println "test：$message"
+	}
+	def info(){
+		println "info：$message"
+	}
+}
+task hello(type: HelloWorldTask){
+	doLast{
+		info()
+	}
+}
+task hello1(type: HelloWorldTask){
+	message = "疯狂java联盟"
+}
+// 使用Groovy文件中的task
+task show(type: org.fkjava.ShowTask) 
+// 使用Groovy文件中的task
+task show1(type: org.fkjava.ShowTask) {
+	// 对file属性赋值
+	file = file("g:/LoggerTest.java")
+}

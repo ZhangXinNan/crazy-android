@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+	android:shape="rectangle">
+	<!-- 设置填充颜色 -->
+	<solid android:color="#fff"/>
+	<!-- 设置四周的内边距 -->
+	<padding android:left="7dp"
+		android:top="7dp"
+		android:right="7dp"
+		android:bottom="7dp" />
+	<!-- 设置边框 -->
+	<stroke android:width="3dip" android:color="#ff0" />
+</shape>

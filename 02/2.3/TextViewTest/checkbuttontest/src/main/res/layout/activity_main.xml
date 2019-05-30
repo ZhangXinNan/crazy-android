@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:padding="12dp">
+	<TableRow>
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="性别:"/>
+		<!-- 定义一组单选钮 -->
+		<RadioGroup android:id="@+id/rg"
+			android:orientation="horizontal"
+			android:layout_gravity="center_horizontal">
+			<!-- 定义两个单选钮 -->
+			<RadioButton android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:id="@+id/male"
+				android:text="男"
+				android:checked="true"/>
+			<RadioButton android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:id="@+id/female"
+				android:text="女"/>
+		</RadioGroup>
+	</TableRow>
+	<TableRow>
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="喜欢的颜色:" />
+		<!-- 定义一个垂直的线性布局 -->
+		<LinearLayout android:layout_gravity="center_horizontal"
+			android:orientation="vertical"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content">
+			<!-- 定义三个复选框 -->
+			<CheckBox android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="红色"
+				android:checked="true"/>
+			<CheckBox android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="蓝色"/>
+			<CheckBox android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="绿色"/>
+		</LinearLayout>
+	</TableRow>
+	<TextView
+		android:id="@+id/show"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"/>
+</TableLayout>

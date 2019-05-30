@@ -1,0 +1,4 @@
+<resources>
+	<string name="app_name">SpinnerTest</string>
+	<string name="tip">选择图书</string>
+</resources>
